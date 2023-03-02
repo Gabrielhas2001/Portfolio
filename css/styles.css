@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    width: 70vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1,
+.navbar span {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 20px;
+}
+
+.navbar span {
+    color: rgb(49, 49, 236);
+}
+
+.navbar h1 {
+    color: rgba(143, 134, 137, 0.753);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5625rem;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'ubuntu', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .navbar h1 {
+        display: none;
+    }
+
+    .navbar ul {
+        gap: 30px;
+        font-family: 25px;
+    }
+}
