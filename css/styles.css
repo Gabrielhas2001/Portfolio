@@ -37,6 +37,7 @@
     font-size: 20px;
     text-decoration: none;
     font-family: 'ubuntu', sans-serif;
+    color: rgb(49, 49, 236);
 }
 
 @media (max-width: 550px) {
@@ -48,11 +49,16 @@
         gap: 30px;
         font-family: 25px;
     }
+
+    .hero {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 .hero {
-    margin: auto;
-    width: 600px;
+    margin: 50px auto;
+    width: 70vw;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -68,4 +74,26 @@
     object-fit: cover;
     border: 1px solid rgb(49, 49, 236);
     padding: 5px;
+}
+
+.hero h3 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.btn-hero {
+    border: none;
+    padding: 15px;
+    background-color: rgb(49, 49, 236);
+    border-radius: 25px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 250px;
+    color: #fff;
+}
+
+.btn-hero:first-of-type {
+    margin-top: 25px;
+    margin-right: 81px;
 }
