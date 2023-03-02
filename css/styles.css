@@ -49,3 +49,23 @@
         font-family: 25px;
     }
 }
+
+.hero {
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgb(49, 49, 236);
+    padding: 5px;
+}
