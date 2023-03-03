@@ -1,99 +1,65 @@
+:root {
+    --main-color: #1674aa;
+    --second-color: #571d8d;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'ubuntu', sans-serif;
     font-size: 16px;
+    font-family: 'Tilt Neon', cursive;
+}
+
+header {
+    width: 80vw;
+    margin: 1.10rem auto;
+}
+
+.hide {
+    display: none;
 }
 
 .navbar {
-    width: 70vw;
-    margin: 20px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.navbar h1,
-.navbar span {
-    font-family: 'Climate Crisis', cursive;
-    font-size: 20px;
+.navbar .right {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
 
-.navbar span {
-    color: rgb(49, 49, 236);
+.navbar .right .nav-header {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.8s ease-in-out;
+}
+
+.navbar .right .nav-header:hover {
+    font-size: 25px;
 }
 
 .navbar h1 {
-    color: rgba(143, 134, 137, 0.753);
+    font-size: 1.50rem;
+    color: var(--second-color);
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5625rem;
+.selected {
+    border-bottom: 2.5px solid var(--second-color);
+    border-right: 2.3px solid var(--main-color);
+    padding-right: 8px;
+    padding-bottom: 5px;
 }
 
-.navbar ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'ubuntu', sans-serif;
-    color: rgb(49, 49, 236);
-}
-
-@media (max-width: 550px) {
-    .navbar h1 {
-        display: none;
+@media (min-width: 500px) {
+    .hide {
+        display: inline-block;
     }
 
-    .navbar ul {
-        gap: 30px;
-        font-family: 25px;
+    .nav-header,
+    .hide {
+        font-size: 20px;
     }
-
-    .hero {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-.hero {
-    margin: 50px auto;
-    width: 70vw;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.hero img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid rgb(49, 49, 236);
-    padding: 5px;
-}
-
-.hero h3 {
-    font-family: 'ubuntu', sans-serif;
-    font-size: 25px;
-    margin-top: 15px;
-}
-
-.btn-hero {
-    border: none;
-    padding: 15px;
-    background-color: rgb(49, 49, 236);
-    border-radius: 25px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    width: 250px;
-    color: #fff;
-}
-
-.btn-hero:first-of-type {
-    margin-top: 25px;
-    margin-right: 81px;
 }
