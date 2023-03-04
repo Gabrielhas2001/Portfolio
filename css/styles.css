@@ -1,6 +1,7 @@
 :root {
     --main-color: #1674aa;
     --second-color: #571d8d;
+    --text-color-Main: #fff;
 }
 
 * {
@@ -34,7 +35,7 @@ header {
 .navbar .right .nav-header {
     text-decoration: none;
     color: var(--main-color);
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .navbar .right .nav-header:hover {
@@ -53,6 +54,41 @@ header {
     padding-bottom: 5px;
 }
 
+.container-hero {
+    width: 80vw;
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.btn-hero {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 0 7px;
+    background-color: var(--second-color);
+    color: var(--text-color-Main);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn-hero:hover {
+    transform: scale(1.2);
+}
+
 @media (min-width: 500px) {
     .hide {
         display: inline-block;
@@ -61,5 +97,21 @@ header {
     .nav-header,
     .hide {
         font-size: 20px;
+    }
+
+    .hero-picture {
+        width: 350px;
+        height: 350px;
+        padding-bottom: 15px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+    }
+
+    .btn-hero {
+        margin: 10px 0 0 45px;
     }
 }
