@@ -9,6 +9,12 @@
     padding: 0;
     font-size: 16px;
     font-family: 'Tilt Neon', cursive;
+    color: var(--text-color-Main);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1b1b1b;
 }
 
 header {
@@ -136,14 +142,37 @@ header {
     color: var(--text-color-Main);
 }
 
+.container-contact {
+    background-color: black;
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.contact {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    font-size: 25px;
+}
+
 @media (min-width: 500px) {
+    * {
+        font-size: 25px;
+    }
+
     .hide {
         display: inline-block;
     }
 
     .nav-header,
     .hide {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .hero-picture {
@@ -160,5 +189,26 @@ header {
 
     .btn-hero {
         margin: 10px 0 0 45px;
+    }
+
+    #projects {
+        margin-top: 150px;
+    }
+
+    #projects h2 {
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project {
+        width: 30vw;
+        height: 400px;
     }
 }
