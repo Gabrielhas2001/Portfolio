@@ -1,7 +1,7 @@
 :root {
     --main-color: #1674aa;
     --second-color: #571d8d;
-    --text-color-Main: #fff;
+    --text-color-Main: #000;
 }
 
 * {
@@ -9,12 +9,7 @@
     padding: 0;
     font-size: 16px;
     font-family: 'Tilt Neon', cursive;
-    color: var(--text-color-Main);
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: #1b1b1b;
 }
 
 header {
@@ -88,7 +83,7 @@ header {
 
 .btn-hero a {
     text-decoration: none;
-    color: var(--text-color-Main);
+    color: #fff
 }
 
 .btn-hero:hover {
@@ -139,7 +134,7 @@ header {
 
 .btn-project a {
     text-decoration: none;
-    color: var(--text-color-Main);
+    color: #fff;
 }
 
 .container-contact {
